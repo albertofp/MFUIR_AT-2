@@ -3,6 +3,7 @@ import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import Navbar from './components/Navbar'
 import Feed from './components/Feed'
 import Sidebar from './components/Sidebar'
+import Friendsbar from './components/Friendsbar'
 
 function App() {
 	return (
@@ -35,7 +36,7 @@ function App() {
 					xs={0}
 					md={2}
 				>
-					Friendsbar
+					<Friendsbar />
 				</Grid2>
 			</Grid2>
 		</div>

@@ -13,6 +13,7 @@ import {
 	Typography
 } from '@mui/material'
 import React, { useState } from 'react'
+import { faker } from '@faker-js/faker'
 
 const StyledToolbar = styled(Toolbar)({
 	display: 'flex',
@@ -62,12 +63,14 @@ const Navbar = () => {
 				</Search>
 				<Icons>
 					<Badge
+						sx={{ cursor: 'pointer' }}
 						badgeContent={9}
 						color='error'
 					>
 						<Notifications />
 					</Badge>
 					<Badge
+						sx={{ cursor: 'pointer' }}
 						badgeContent={6}
 						color='error'
 					>
@@ -75,20 +78,25 @@ const Navbar = () => {
 					</Badge>
 
 					<Avatar
+						src={faker.image.avatar()}
 						sx={{ width: 30, height: 30, cursor: 'pointer' }}
 						onClick={(e) => setOpen(true)}
 					/>
 				</Icons>
 				<UserBox onClick={(e) => setOpen(true)}>
 					<Avatar sx={{ width: 30, height: 30, cursor: 'pointer' }} />
-					<Typography variant='span'>Alberto</Typography>
+					<Typography variant='span'>{faker.name.firstName()}</Typography>
 				</UserBox>
 			</StyledToolbar>
 			<Menu
 				open={open}
 				onClose={(e) => setOpen(false)}
 				anchorOrigin={{
-					vertical: 'center',
+					vertical: 'top',
+					horizontal: 'right'
+				}}
+				transformOrigin={{
+					vertical: 'top',
 					horizontal: 'right'
 				}}
 			>

@@ -1,6 +1,8 @@
 import './App.css'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import Navbar from './components/Navbar'
+import { ThemeConsumer } from 'styled-components'
+import Feed from './components/Feed'
 
 function App() {
 	return (
@@ -22,7 +24,7 @@ function App() {
 					xs={12}
 					md={8}
 				>
-					Feed
+					<Feed />
 				</Grid2>
 				<Grid2
 					xs={0}

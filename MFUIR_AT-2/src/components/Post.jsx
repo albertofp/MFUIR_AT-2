@@ -15,7 +15,12 @@ function Post() {
 	return (
 		<Card sx={{ margin: 4 }}>
 			<CardHeader
-				avatar={<Avatar sx={{ bgcolor: 'blue' }}>A</Avatar>}
+				avatar={
+					<Avatar
+						sx={{ cursor: 'pointer' }}
+						src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.chesscomfiles.com%2Fuploads%2Fv1%2Fimages_users%2Ftiny_mce%2FPeterDoggers%2FphpwTLwtA.jpeg&f=1&nofb=1&ipt=e37d6a633d06668abe6562cc07fd2abbbcd9db2933d22f8f657d9403ad5d66a1&ipo=images'
+					></Avatar>
+				}
 				action={
 					<IconButton aria-label='settings'>
 						<MoreVert />
@@ -25,6 +30,7 @@ function Post() {
 				subheader='4 de Janeiro de 2023'
 			/>
 			<CardMedia
+				sx={{ cursor: 'pointer' }}
 				component='img'
 				height='20%'
 				alt='post img'

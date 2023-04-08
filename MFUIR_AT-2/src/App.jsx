@@ -1,13 +1,18 @@
 import './App.css'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import Navbar from './components/Navbar'
-import { ThemeConsumer } from 'styled-components'
 import Feed from './components/Feed'
+import Sidebar from './components/Sidebar'
 
 function App() {
 	return (
 		<div className='App'>
-			<Grid2 container>
+			<Grid2
+				container
+				bgcolor={'background.default'}
+				color={'text.primary'}
+				sx={{ display: 'flex' }}
+			>
 				<Grid2
 					xs={12}
 					md={12}
@@ -18,7 +23,7 @@ function App() {
 					xs={0}
 					md={2}
 				>
-					Sidebar
+					<Sidebar />
 				</Grid2>
 				<Grid2
 					xs={12}

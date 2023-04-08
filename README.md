@@ -2,13 +2,17 @@
 
 ## Alberto Fontenelle Pluecker
 
+---
+
 ## Prof. Jonh Carvalho
+
+---
 
 ## [Exercício 2](https://replit.com/@INFNET-GRLEDC01C1-N2-L1/MFUIR-AT-02-AlbertoFontenel)
 
 ### Rede Social com Material UI
 
---
+---
 
 > Implemente uma página html que represente a sua rede social. Esta página deve ser composta por componentes utilizando Mui(Material UI):
 

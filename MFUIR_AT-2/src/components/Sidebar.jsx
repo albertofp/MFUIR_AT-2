@@ -24,9 +24,12 @@ function Sidebar() {
 							href='#home'
 						>
 							<ListItemIcon>
-								<Home />
+								<Home color='primary.light' />
 							</ListItemIcon>
-							<ListItemText primary='Página Inicial' />
+							<ListItemText
+								primary='Página Inicial'
+								color='primary.light'
+							/>
 						</ListItemButton>
 					</ListItem>
 
@@ -36,7 +39,7 @@ function Sidebar() {
 							href='#friends'
 						>
 							<ListItemIcon>
-								<Person />
+								<Person color='primary.light' />
 							</ListItemIcon>
 							<ListItemText primary='Amigos' />
 						</ListItemButton>
@@ -48,7 +51,7 @@ function Sidebar() {
 							href='#profile'
 						>
 							<ListItemIcon>
-								<AccountBox />
+								<AccountBox color='primary.light' />
 							</ListItemIcon>
 							<ListItemText primary='Perfil' />
 						</ListItemButton>
@@ -60,7 +63,7 @@ function Sidebar() {
 							href='#marketplace'
 						>
 							<ListItemIcon>
-								<Storefront />
+								<Storefront color='primary.light' />
 							</ListItemIcon>
 							<ListItemText primary='Compras & Vendas' />
 						</ListItemButton>

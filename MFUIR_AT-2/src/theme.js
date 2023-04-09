@@ -4,15 +4,16 @@ import { dark } from '@mui/material/styles/createPalette'
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: '#1760a5',
-			light: 'skyblue'
+			main: '#4184B4',
+			light: '#D2E3EF'
 		},
 		secondary: {
-			main: '#15c630'
+			main: '#ACCBE1'
 		},
-		otherColor: {
-			main: '#999'
+		error: {
+			main: '#F15757'
 		},
+
 		mode: 'dark'
 	}
 })

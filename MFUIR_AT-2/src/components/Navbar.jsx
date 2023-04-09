@@ -53,6 +53,7 @@ const Navbar = () => {
 				<Typography
 					variant='h6'
 					sx={{ display: { xs: 'none', sm: 'block' } }}
+					color='primary.light'
 				>
 					REDE SOCIAL
 				</Typography>
@@ -68,14 +69,14 @@ const Navbar = () => {
 						badgeContent={getRandomInt(1, 10)}
 						color='error'
 					>
-						<Notifications />
+						<Notifications color='primary.light' />
 					</Badge>
 					<Badge
 						sx={{ cursor: 'pointer' }}
 						badgeContent={getRandomInt(1, 10)}
 						color='error'
 					>
-						<Mail />
+						<Mail color='primary.light' />
 					</Badge>
 
 					<Avatar

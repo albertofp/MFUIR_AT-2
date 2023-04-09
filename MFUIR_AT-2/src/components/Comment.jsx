@@ -21,7 +21,10 @@ function Comment() {
 				</ListItemAvatar>
 				<ListItemText
 					primary={
-						<Typography sx={{ fontWeight: 'bold' }}>
+						<Typography
+							color='primary.light'
+							sx={{ fontWeight: 'bold' }}
+						>
 							{faker.name.fullName()}
 						</Typography>
 					}
@@ -31,7 +34,7 @@ function Comment() {
 								component='span'
 								variant='body2'
 								sx={{ display: 'inline' }}
-								color='textPrimary'
+								color='secondary'
 							>
 								{faker.lorem.paragraph()}
 							</Typography>

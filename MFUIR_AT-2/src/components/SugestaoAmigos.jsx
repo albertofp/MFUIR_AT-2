@@ -15,7 +15,7 @@ function SugestaoAmigos() {
 			>
 				Sugestão de Amizades
 			</Typography>
-			{genAmigo(`amigos em comum, entre eles ${faker.name.fullName()}`)}
+			{genAmigo(`amigo(s) em comum, entre eles ${faker.name.fullName()}`)}
 		</Box>
 	)
 }

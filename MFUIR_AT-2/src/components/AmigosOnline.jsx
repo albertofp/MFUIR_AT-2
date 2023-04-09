@@ -14,8 +14,7 @@ function genFriends(min, max) {
 			></Avatar>
 		)
 	}
-	console.log(chain.length)
-	return <>{chain}</>
+	return [<>{chain}</>]
 }
 
 function AmigosOnline() {
@@ -27,6 +26,7 @@ function AmigosOnline() {
 			<Typography
 				variant='h6'
 				fontWeight={150}
+				color='primary.light'
 			>
 				Amigos Online
 			</Typography>

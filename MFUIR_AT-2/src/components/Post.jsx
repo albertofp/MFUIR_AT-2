@@ -55,7 +55,12 @@ function Post() {
 					image={faker.image.image()}
 				/>
 				<CardContent>
-					<Typography variant='body2'>{faker.lorem.paragraph()}</Typography>
+					<Typography
+						variant='body2'
+						color='primary'
+					>
+						{faker.lorem.paragraph()}
+					</Typography>
 				</CardContent>
 				<CardActions>
 					<IconButton>
@@ -64,7 +69,7 @@ function Post() {
 							badgeContent={getRandomInt(0, 100)}
 							color='secondary'
 						>
-							<ThumbUpSharp />
+							<ThumbUpSharp color='primary' />
 						</Badge>
 					</IconButton>
 
@@ -74,13 +79,11 @@ function Post() {
 							badgeContent={getRandomInt(0, 100)}
 							color='secondary'
 						>
-							<Share />
+							<Share color='primary' />
 						</Badge>
 					</IconButton>
 				</CardActions>
-				<List sx={{ width: '100%', backgroundColor: 'otherColor' }}>
-					{genComments(1, 5)}
-				</List>
+				<List sx={{ width: '100%' }}>{genComments(1, 5)}</List>
 			</Card>
 		</>
 	)

@@ -23,7 +23,10 @@ export default function genAmigo(msg) {
 					</ListItemAvatar>
 					<ListItemText
 						primary={
-							<Typography sx={{ fontWeight: 'bold' }}>
+							<Typography
+								sx={{ fontWeight: 'bold' }}
+								color='primary.light'
+							>
 								{faker.name.fullName()}
 							</Typography>
 						}
@@ -33,9 +36,10 @@ export default function genAmigo(msg) {
 									component='span'
 									variant='body2'
 									sx={{ display: 'inline' }}
-									color='textPrimary'
+									color='primary'
 								>
-									{getRandomInt(1, 20)}{' '+ msg}
+									{getRandomInt(1, 20)}
+									{' ' + msg}
 								</Typography>
 							</>
 						}

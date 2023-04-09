@@ -94,6 +94,7 @@ const Navbar = () => {
 				open={open}
 				onClose={(e) => setOpen(false)}
 				anchorOrigin={{
+					//Fixa o menu no topo direito da tela, abaixo da navbar
 					vertical: 'top',
 					horizontal: 'right'
 				}}

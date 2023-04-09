@@ -1,7 +1,6 @@
 import React from 'react'
 import {Typography, Paper } from '@mui/material'
 import genAmigo from '../utils/genAmigo'
-import { faker } from '@faker-js/faker'
 
 function SugestaoAmigos() {
 	return (

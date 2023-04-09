@@ -15,6 +15,19 @@ import React from 'react'
 import { theme } from '../theme'
 import Comment from './Comment'
 import { faker } from '@faker-js/faker'
+import getRandomInt from '../utils/getRandomInt'
+
+//Gera um numero aleatório de comentários entre min e max
+function genComments(min, max) {
+	const qtdComments = getRandomInt(min, max)
+	const comment = <Comment />
+	let chain = []
+	for (let i = 0; i < qtdComments; i++) {
+		chain.push(comment)
+	}
+	console.log(chain.length)
+	return <>{chain}</>
+}
 
 function Post() {
 	return (
@@ -43,18 +56,13 @@ function Post() {
 					image={faker.image.image()}
 				/>
 				<CardContent>
-					<Typography
-						variant='body2'
-						color='text.secondary'
-					>
-						{faker.lorem.paragraphs()}
-					</Typography>
+					<Typography variant='body2'>{faker.lorem.paragraph()}</Typography>
 				</CardContent>
 				<CardActions>
 					<IconButton>
 						<Badge
 							sx={{ cursor: 'pointer' }}
-							badgeContent={29}
+							badgeContent={getRandomInt(0, 100)}
 							color='secondary'
 						>
 							<ThumbUpSharp />
@@ -64,7 +72,7 @@ function Post() {
 					<IconButton>
 						<Badge
 							sx={{ cursor: 'pointer' }}
-							badgeContent={3}
+							badgeContent={getRandomInt(0, 100)}
 							color='secondary'
 						>
 							<Share />
@@ -72,10 +80,7 @@ function Post() {
 					</IconButton>
 				</CardActions>
 				<List sx={{ width: '100%', backgroundColor: 'otherColor' }}>
-					<Comment />
-					<Comment />
-					<Comment />
-					<Comment />
+					{genComments(1, 5)}
 				</List>
 			</Card>
 		</>

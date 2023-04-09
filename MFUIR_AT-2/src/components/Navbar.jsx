@@ -14,6 +14,7 @@ import {
 } from '@mui/material'
 import React, { useState } from 'react'
 import { faker } from '@faker-js/faker'
+import getRandomInt from '../utils/getRandomInt'
 
 const StyledToolbar = styled(Toolbar)({
 	display: 'flex',
@@ -64,14 +65,14 @@ const Navbar = () => {
 				<Icons>
 					<Badge
 						sx={{ cursor: 'pointer' }}
-						badgeContent={9}
+						badgeContent={getRandomInt(1, 10)}
 						color='error'
 					>
 						<Notifications />
 					</Badge>
 					<Badge
 						sx={{ cursor: 'pointer' }}
-						badgeContent={6}
+						badgeContent={getRandomInt(1, 10)}
 						color='error'
 					>
 						<Mail />

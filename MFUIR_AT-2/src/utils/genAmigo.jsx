@@ -16,7 +16,7 @@ export default function genAmigo(msg, sugestao = false) {
 	for (let i = 0; i < 10; i++) {
 		chain.push(
 			<>
-				<ListItem alignItems='flex-start'>
+				<ListItem alignItems='flex-start' key={faker.datatype.uuid()}>
 					<ListItemAvatar>
 						<Avatar
 							alt='avatar'

@@ -30,7 +30,6 @@ function genComments(min, max) {
 
 function Post() {
 	return (
-		<>
 			<Card sx={{ margin: 4 }}>
 				<CardHeader
 					avatar={
@@ -85,7 +84,6 @@ function Post() {
 				</CardActions>
 				<List sx={{ width: '100%' }}>{genComments(1, 5)}</List>
 			</Card>
-		</>
 	)
 }
 

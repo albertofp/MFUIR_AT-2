@@ -1,4 +1,4 @@
-import { Box, Divider, Paper, Stack } from '@mui/material'
+import { Box, Divider, Stack } from '@mui/material'
 import React from 'react'
 import AmigosOnline from './AmigosOnline'
 import Amigos from './Amigos'

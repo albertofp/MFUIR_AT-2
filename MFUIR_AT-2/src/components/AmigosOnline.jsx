@@ -27,7 +27,6 @@ function AmigosOnline() {
 			<Typography
 				variant='h6'
 				fontWeight={150}
-				textAlign='center'
 			>
 				Amigos Online
 			</Typography>

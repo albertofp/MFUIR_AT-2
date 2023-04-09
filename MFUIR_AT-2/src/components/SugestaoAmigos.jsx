@@ -1,7 +1,10 @@
 import React from 'react'
+import { Box, Typography } from '@mui/material'
+import genAmigo from '../utils/genAmigo'
+import { faker } from '@faker-js/faker'
 
 function SugestaoAmigos() {
-  return (
+	return (
 		<Box
 			position='fixed'
 			width={250}
@@ -9,11 +12,10 @@ function SugestaoAmigos() {
 			<Typography
 				variant='h6'
 				fontWeight={150}
-				textAlign='center'
 			>
-				Amigos
+				Sugestão de Amizades
 			</Typography>
-			{genAmigo()}
+			{genAmigo(`amigos em comum, entre eles ${faker.name.fullName()}`)}
 		</Box>
 	)
 }

@@ -21,7 +21,6 @@ function Amigos() {
 			<Typography
 				variant='h6'
 				fontWeight={150}
-				textAlign='center'
 			>
 				Amigos
 			</Typography>

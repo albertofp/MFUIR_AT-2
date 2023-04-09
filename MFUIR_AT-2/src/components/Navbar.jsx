@@ -9,6 +9,7 @@ import {
 	Menu,
 	MenuItem,
 	styled,
+	TextField,
 	Toolbar,
 	Typography
 } from '@mui/material'
@@ -22,7 +23,7 @@ const StyledToolbar = styled(Toolbar)({
 })
 
 const Search = styled('div')(({ theme }) => ({
-	backgroundColor: 'white',
+	backgroundColor: theme.palette.primary.main,
 	padding: '0 10px',
 	borderRadius: theme.shape.borderRadius,
 	width: '35%'

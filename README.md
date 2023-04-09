@@ -10,6 +10,18 @@
 
 ## [Exercício 2](https://replit.com/@INFNET-GRLEDC01C1-N2-L1/MFUIR-AT-02-AlbertoFontenel)
 
+<div>
+  <img src="MFUIR_AT-2/src/assets/javascript.svg" alt="Javascript logo" width="35"/>  
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="MFUIR_AT-2/src/assets/react.svg" alt="React logo" width="35"/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="MFUIR_AT-2/src/assets/vitejs.svg" alt="Vite logo" width="35"/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="MFUIR_AT-2/src/assets/material-ui.svg" alt="MUI logo" width="35"/>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="MFUIR_AT-2/src/assets/fakerjs.svg" alt="fakerjs logo" width="35"/>
+<div>
+
 ### Rede Social com Material UI
 
 ---

@@ -1,15 +1,8 @@
 import {
 	Box,
-	Divider,
-	ListItem,
-	ListItemAvatar,
-	ListItemText,
 	Typography,
-	Avatar
 } from '@mui/material'
 import React from 'react'
-import { faker } from '@faker-js/faker'
-import getRandomInt from '../utils/getRandomInt'
 import genAmigo from '../utils/genAmigo'
 
 function Amigos() {

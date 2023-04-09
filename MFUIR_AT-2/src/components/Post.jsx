@@ -12,7 +12,6 @@ import {
 	List
 } from '@mui/material'
 import React from 'react'
-import { theme } from '../theme'
 import Comment from './Comment'
 import { faker } from '@faker-js/faker'
 import getRandomInt from '../utils/getRandomInt'

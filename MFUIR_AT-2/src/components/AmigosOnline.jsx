@@ -1,7 +1,7 @@
 import React from 'react'
 import getRandomInt from '../utils/getRandomInt'
 import { faker } from '@faker-js/faker'
-import { Avatar, AvatarGroup, Box, Typography } from '@mui/material'
+import { Avatar, AvatarGroup, Box, Paper, Typography } from '@mui/material'
 
 function genFriends(min, max) {
 	const qtdFriends = getRandomInt(min, max)
@@ -19,7 +19,7 @@ function genFriends(min, max) {
 
 function AmigosOnline() {
 	return (
-		<Box
+		<Paper
 			position='fixed'
 			width={250}
 		>
@@ -30,8 +30,10 @@ function AmigosOnline() {
 			>
 				Amigos Online
 			</Typography>
-			<AvatarGroup max={5}>{genFriends(3, 7)}</AvatarGroup>
-		</Box>
+			<div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+				<AvatarGroup max={5}>{genFriends(3, 7)}</AvatarGroup>
+			</div>
+		</Paper>
 	)
 }
 

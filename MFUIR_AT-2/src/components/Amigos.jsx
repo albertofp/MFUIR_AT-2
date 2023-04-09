@@ -1,12 +1,14 @@
-import { Box, Typography } from '@mui/material'
+import {Typography,Paper } from '@mui/material'
 import React from 'react'
 import genAmigo from '../utils/genAmigo'
 
 function Amigos() {
 	return (
-		<Box
+		<Paper
 			position='fixed'
 			width={250}
+			padding={2}
+			sx={{border:'1px solid'}}
 		>
 			<Typography
 				variant='h6'
@@ -16,7 +18,7 @@ function Amigos() {
 				Amigos
 			</Typography>
 			{genAmigo('amigo(s) em comum')}
-		</Box>
+		</Paper>
 	)
 }
 
